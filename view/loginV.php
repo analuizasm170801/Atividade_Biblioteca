@@ -1,16 +1,15 @@
 <?php
 
-use service\UsuariosService;
+use service\EmployeesService;
 
 include_once "../generic/Autoload.php";
 
 $email=$_POST['email'];
-$senha=$_POST['senha'];
-
-$usuarioServ = new UsuariosService();
-$usu=$usuarioServ->verificaLogin($email,$senha);
-if($usu){
-    header('Location: ../public/dashboard.php');
+$password=$_POST['password'];
+$usuarioServ = new EmployeesService();
+$employee=$usuarioServ->verificaLogin($email,$password);
+if($employee){
+    header('Location: ../public/index.php');
     die;
 }
 

@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /vendas/index.php?url=$1 [L,QSA]

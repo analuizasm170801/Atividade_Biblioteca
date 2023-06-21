@@ -6,7 +6,7 @@ use PDO;
 class DBSingleton{
     private static $instancia = null;
     private $pdo;
-    private $host= "mysql:host=localhost:3306;dbname=biblioteca";
+    private $host= "mysql:host=localhost:3306;dbname=tarefasja";
     private $user = "root";
     private $senha = "";
 

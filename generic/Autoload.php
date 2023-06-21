@@ -1,6 +1,6 @@
 <?php
 namespace generic;
-define("DIR",$_SERVER['DOCUMENT_ROOT'].'/biblioteca');
+define("DIR",$_SERVER['DOCUMENT_ROOT'].'/gerenciador');
 class Autoload{
     public static function register(){
         spl_autoload_register(function($class){
